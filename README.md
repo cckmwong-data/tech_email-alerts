@@ -1,6 +1,6 @@
 # AI-Powered Quantamental Tech Analysis
 
-[This project](https://app.powerbi.com/view?r=eyJrIjoiMmRjM2RmMGEtOTFkMi00OWY0LWFkOTctZTUxOTQyYTNkYzE3IiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyze the tech stocks from different perspectives using **Quantimental** approach - the fusion of **Quantitative** and **Fundamental Analysis**, alongside **Technical Analysis** and daily analysis powered by **Artificial Intelligence**. 
+[This project](https://app.powerbi.com/view?r=eyJrIjoiZDhjZDIzNzUtMDY0OS00MGI0LWI5NTItODZjNzRlY2ExMmIwIiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyze the tech stocks from different perspectives using **Quantimental** approach - the fusion of **Quantitative** and **Fundamental Analysis**, alongside **Technical Analysis** and daily analysis powered by **Artificial Intelligence**. 
 
 ![Flow](images/flow.png)
 
