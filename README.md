@@ -1,6 +1,6 @@
-# AI-Powered Quantamental Tech Analysis
+# AI-Powered Quantamental Tech Email Alerts
 
-[This project](https://app.powerbi.com/view?r=eyJrIjoiZDhjZDIzNzUtMDY0OS00MGI0LWI5NTItODZjNzRlY2ExMmIwIiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyze the tech stocks from different perspectives using **Quantimental** approach - the fusion of **Quantitative** and **Fundamental Analysis**, alongside **Technical Analysis** and daily analysis powered by **Artificial Intelligence**. 
+[This project](https://app.powerbi.com/view?r=eyJrIjoiZDhjZDIzNzUtMDY0OS00MGI0LWI5NTItODZjNzRlY2ExMmIwIiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyze the tech stocks from different perspectives using **Quantimental** approach - the fusion of **Quantitative** and **Fundamental Analysis**, alongside **Technical Analysis** and daily analysis powered by **Artificial Intelligence**. Investor will be notified by email, whe the system detects price anomaly is detected or a trading signal (i.e. BUY/ SELL) is triggered.
 
 ![Flow](images/flow.png)
 
@@ -17,6 +17,7 @@ Most investment tools provide either financial data or technical indicators in i
 ---
 
 ## Key Highlights
+* **Power Automate:** A custom template can be set as email alert to specific users, whenever the system detects price anomaly is detected or a trading signal (i.e. BUY/ SELL) is triggered. This removes the need to constantly monitor dashboards.
 * **Pure Quantimental Fusion:** Successfully combining statistical machine learning (Quantitative) with macroeconomic intrinsic valuation (Fundamental) and momentum architecture (Technical).
 * **Automated ETL:** Python scripts and GitHub Actions refresh the entire financial dataset every 24 hours.
 * **Dynamic Valuation:** An interactive 2-stage DCF engine featuring a WACC vs. Terminal Growth sensitivity matrix.
@@ -67,6 +68,8 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 
 ✔ **System Architecture:** Designing a synchronized, multi-source data refresh architecture.
 
+✔ **Event-Driven Alerting & Communication:** Integrated an automated SMTP/API email notification engine that monitors data states and immediately dispatches real-time, high-priority alerts to investors upon detecting anomalies or signal triggers.
+
 ---
 
 ## How the Pipeline Works
@@ -74,6 +77,7 @@ A visual **Cash Flow Bridge** identifies the specific drivers of cash movement, 
 2.  **Automate:** GitHub Actions triggers the ETL processes which includes i) extraction of financial data,  ii) technical indicators and AI interpretation, and iii) detecting price anomalies with deep learning models, running at **01:00 UTC** (EST 20:00, after the market close) every weekday. Due to security reasons, the actual execution of Github Actions are carried out in separate private Repos. 
 3.  **Sync:** Cleaned and structured data is pushed to Google Sheets, serving as a centralized data warehouse.
 4.  **Visualize:** Power BI Service performs a scheduled refresh at EST 22:00, in order to update the cloud-hosted dashboard.
+5.  **Email Alert:** An email notification will be sent to specific user upon detecting anomalies or signal triggers.
 
 ---
 
