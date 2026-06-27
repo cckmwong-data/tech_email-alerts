@@ -41,7 +41,7 @@ If either one of these conditions is met, Power Automate will send an email aler
 
 ## Methodologies
 ### Quantitaive Finance
-Long Short-Term Memory (LSTM) autoencoder is useed to reconstruct stock price log returns and identify unusual relative movements. If the model struggles to accurately reconstruct a sequence (i.e., produces a large reconstruction error), the sequence likely contains anomalous behavior. Anomalies are flagged when the deviation between the actual and reconstructed log return exceeds the rolling threshold (i.e. rolling mean + rolling standard deviation of the reconstruction error). 
+Long Short-Term Memory (LSTM) autoencoder is used to reconstruct stock price log returns and identify unusual relative movements. If the model struggles to accurately reconstruct a sequence (i.e., produces a large reconstruction error), the sequence likely contains anomalous behavior. Anomalies are flagged when the deviation between the actual and reconstructed log return exceeds the rolling threshold (i.e. rolling mean + rolling standard deviation of the reconstruction error). 
 
 The results of price anomalies are written to Google Sheet, whereas the model is saved as for future prediction in a separate python script which runs daily in Github Action. 
 
