@@ -35,7 +35,7 @@ If any of these conditions are met, Power Automate will send an email alert to d
 * **Dynamic Valuation:** An interactive 2-stage DCF engine featuring a WACC vs. Terminal Growth sensitivity matrix.
 * **Advanced LLM Analytical Context:** Moves beyond generic AI prompts by feeding raw, structured market data and calculated mathematical overlays (RSI/MACD) directly into **Gemini 2.5**, turning raw technical data points into clear, executive-level market summaries.
 * **Full Financial Stack:** Deep-dive modules for Income Statement, Balance Sheet, and Cash Flow (including a visual Cash Flow Bridge).
-* **Automated ETL:** Python scripts and GitHub Actions refresh the entire financial dataset every 24 hours. Power BI report is scheduled for a daily refresh at designated time.
+* **Automated ETL:** Python scripts and GitHub Actions refresh the entire financial dataset every 24 hours, while the data is stored at Google Sheet and Google BigQuery. Power BI report is scheduled for a daily refresh at designated time.
 
 ---
 
