@@ -1,6 +1,6 @@
 # AI-Powered Quantamental Tech Email Alerts
 
-[This project](https://app.powerbi.com/view?r=eyJrIjoiZDhjZDIzNzUtMDY0OS00MGI0LWI5NTItODZjNzRlY2ExMmIwIiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyzes US tech stocks from different multiple perspectives - **1. Quantitative**, **2. Fundamental Analysis**, and **3. Technical Analysis** with daily analysis powered by **Artificial Intelligence**. All data will be refreshed on a daily basis after the market closes. The system will send email alerts to designated user(s), if price anomaly and/or trading signals are detected.
+[This project](https://app.powerbi.com/view?r=eyJrIjoiNmFlZTkwYWItZDEzMC00ZjM1LThlYWItZTMwYTk2YTZiNDQ2IiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyzes US tech stocks from different multiple perspectives - **1. Quantitative**, **2. Fundamental Analysis**, and **3. Technical Analysis** with daily analysis powered by **Artificial Intelligence**. All data will be refreshed on a daily basis after the market closes. The system will send email alerts to designated user(s), if price anomaly and/or trading signals are detected.
 
 ![Flow](images/flow_bq.png)
 
@@ -43,7 +43,7 @@ If any of these conditions are met, Power Automate will send an email alert to d
 ### Quantitative Finance
 Long Short-Term Memory (LSTM) autoencoder is used to reconstruct stock price log returns and identify unusual relative movements. If the model struggles to accurately reconstruct a sequence (i.e., produces a large reconstruction error), the sequence likely contains anomalous behavior. Anomalies are flagged when the deviation between the actual and reconstructed log return exceeds the rolling threshold (i.e. the rolling mean + rolling standard deviation of the reconstruction error). 
 
-Price anomalies are logged directly to a Google Sheet, while the trained model is saved for future predictions. A separate Python script, scheduled and monitored via GitHub Actions, runs the model daily for detecting any price anomalies.
+Price anomalies are logged and saved directly to Google BigQuery, while the trained model is saved for future predictions. A separate Python script, scheduled and monitored via GitHub Actions, runs the model daily for detecting any price anomalies.
 
 ![](images/loss_meta.png)
 
