@@ -77,7 +77,7 @@ This section shows the presence/ absence of **price anomaly**, and **trading sig
 ![Valuation Dashboard](images/valuation.png)
 
 ### 2. AI & Trading Decisions by Technical Analysis
-It tracks the momentum and price boundaries through integrated Relative Strength Index (RSI), MACD, and Bollinger Bands charts. **Gemini 2.5** synthesizes these live technical indicators alongside the price data to deliver an automated, actionable market narrative and an overall trading signal.
+It tracks the momentum and price boundaries through integrated Relative Strength Index (RSI), MACD, and Bollinger Bands charts. **Gemini 2.5** synthesizes these live technical indicators alongside the latest company news to deliver an automated, actionable market narrative and an overall trading signal.
 
 ![Technical Analysis](images/technical_AI.png)
 
