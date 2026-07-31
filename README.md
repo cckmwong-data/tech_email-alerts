@@ -20,7 +20,7 @@ Most investment tools provide either financial data or technical indicators in i
 If any of these conditions are met, Power Automate will send an email alert to designated user(s).
 
 * **Price Anomaly**: An anomaly is flagged by referencing its current stock price to its price history.
-* **Trading Signal**: 
+* **Trading Signal**: A overall investment rating (i.e. Strong Buy/ Buy/ Hold/ Sell/ Strong Sell) is calculated based on a weighted score from fundamental (40%) and technical analysis (60%).
   
 ![Email](images/email2.png)
 
