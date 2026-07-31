@@ -1,6 +1,6 @@
 # AI-Powered Quantamental Tech Email Alerts
 
-[This application](https://app.powerbi.com/view?r=eyJrIjoiMzMyMDQ5ZjItM2ZkYi00MGYxLTliYzYtYjBkOTE4ZmE5ZGUyIiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyzes US tech stocks from different multiple perspectives - **1. Quantitative**, **2. Fundamental Analysis**, and **3. Technical Analysis** with daily analysis powered by **Artificial Intelligence**. All data will be refreshed on a daily basis after the market closes. The system will send email alerts to designated user(s), if price anomaly and/or trading signals are detected.
+[This application](https://app.powerbi.com/view?r=eyJrIjoiMzMyMDQ5ZjItM2ZkYi00MGYxLTliYzYtYjBkOTE4ZmE5ZGUyIiwidCI6IjZjMWQ0MTUyLTM5ZDAtNDRjYS04OGQ5LWI4ZDZkZGNhMDcwOCIsImMiOjEwfQ%3D%3D) analyzes US tech stocks from different multiple perspectives - **1. Quantitative**, **2. Fundamental Analysis**, and **3. Technical Analysis** with daily analysis powered by **Artificial Intelligence**. An investment rating was calculated via a weighted scoring system combining quantitative and fundamental factors. All data will be refreshed on a daily basis after the market closes. The system will send email alerts to designated user(s), if price anomaly and/or a change of trading signal are detected.
 
 ![Flow](images/flow_bq.png)
 
@@ -20,8 +20,7 @@ Most investment tools provide either financial data or technical indicators in i
 If any of these conditions are met, Power Automate will send an email alert to designated user(s).
 
 * **Price Anomaly**: An anomaly is flagged by referencing its current stock price to its price history.
-* **Buy Trading Signal**: The current stock price exhibits a potential upside of greater than 15% relative to the average consensus target price, plus a "Buy" signal seen in technical indicators (Bollinger Band/ RSI + MACD)
-* **Sell Trading Signal**: The current stock price shows a potential negative return compared to the average consensus target price, plus a "Sell" signal seen in technical indicators (Bollinger Band/ RSI + MACD).
+* **Trading Signal**: 
   
 ![Email](images/email2.png)
 
